@@ -1,0 +1,33 @@
+﻿<Window x:Class="CommapsyPC.Windows.PlatformWindow"
+        WindowStyle="None"
+        WindowState="Maximized"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommapsyPC.Windows"
+        mc:Ignorable="d"
+        Background="#2B2E4A"
+        Title="PlatformWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+
+        <Menu>
+            <MenuItem Name="buscarLugaresMenu" Header="Buscar lugares" Click="buscarLugaresMenu_Click"/>
+            <MenuItem Name="peticionesMenu" Header="Peticiones" Click="peticionesMenu_Click"/>
+            <MenuItem Name="reportesMenu" Header="Reportes" Click="reportesMenu_Click"/>
+            <MenuItem Name="soporteMenu" Header="Soporte" Click="soporteMenu_Click"/>
+            <MenuItem Name="moderadoresMenu" Header="Moderadores" Click="moderadoresMenu_Click"/>
+            <MenuItem Header="Opciones">
+                <MenuItem Name="minimizarMenu" Header="Minimizar" Click="minimizarMenu_Click"/>
+                <MenuItem Name="desconectarMenu" Header="Desconectar" Click="desconectarMenu_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <ContentControl Grid.Row="1" Name="container"/>
+
+    </Grid>
+</Window>
