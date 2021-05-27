@@ -66,6 +66,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Class\Opinion.cs" />
+    <Compile Include="Class\Place.cs" />
+    <Compile Include="Controls\OpinionControl.xaml.cs">
+      <DependentUpon>OpinionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlaceButton.xaml.cs">
+      <DependentUpon>PlaceButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlaceFullView.xaml.cs">
+      <DependentUpon>PlaceFullView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Request\Request.cs" />
     <Compile Include="Utils\Utils.cs" />
     <Compile Include="Windows\Explorer.xaml.cs">
@@ -77,6 +88,18 @@
     <Compile Include="Windows\Requests.xaml.cs">
       <DependentUpon>Requests.xaml</DependentUpon>
     </Compile>
+    <Page Include="Controls\OpinionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PlaceButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PlaceFullView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Explorer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

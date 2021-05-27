@@ -1,3 +1,12 @@
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceButton.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceFullView.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Explorer.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\MainWindow.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\PlatformWindow.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Requests.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\App.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC_MarkupCompile.cache
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC_MarkupCompile.lref
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\bin\Debug\CommapsyPC.exe.config
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\bin\Debug\CommapsyPC.exe
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\bin\Debug\CommapsyPC.pdb
@@ -8,14 +17,9 @@ C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\bin\Debug\MaterialDesignColors.
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Explorer.g.cs
-C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\MainWindow.g.cs
-C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\PlatformWindow.g.cs
-C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Requests.g.cs
-C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\App.g.cs
-C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC_MarkupCompile.cache
-C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC_MarkupCompile.lref
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\App.baml
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceButton.baml
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceFullView.baml
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Explorer.baml
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\MainWindow.baml
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\PlatformWindow.baml
@@ -27,3 +31,6 @@ C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC.csproj.Cor
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC.csproj.CopyComplete
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC.exe
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC.pdb
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC.csprojAssemblyReference.cache
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\OpinionControl.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\OpinionControl.baml

@@ -4,11 +4,22 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace CommapsyPC.Utils
 {
     class Utils
     {
+        public static JObject StringToJsonObject(string stringJson) 
+        {
+            return JObject.Parse(stringJson);
+        }
+
+        public static JArray StringToJsonArray(string stringJson)
+        {
+            return JArray.Parse(stringJson);
+        }
+
         public static String sha256_hash(String value)
         {
             StringBuilder Sb = new StringBuilder();
