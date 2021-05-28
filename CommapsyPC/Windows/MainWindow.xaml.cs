@@ -34,6 +34,7 @@ namespace CommapsyPC
 
             this.Dispatcher.Invoke(() => {
                 parameters.Add(new KeyValuePair<string, string>("Mail", mailInput.Text));
+                PlatformWindow.adminMail = mailInput.Text;
                 parameters.Add((new KeyValuePair<string, string>("Password", Utils.Utils.sha256_hash(passwordInput.Password))));
             });
 

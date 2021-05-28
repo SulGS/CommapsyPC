@@ -34,3 +34,7 @@ C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC.pdb
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\CommapsyPC.csprojAssemblyReference.cache
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\OpinionControl.g.cs
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\OpinionControl.baml
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceRequestButton.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceRequestButton.baml
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceRequestFullView.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\PlaceRequestFullView.baml

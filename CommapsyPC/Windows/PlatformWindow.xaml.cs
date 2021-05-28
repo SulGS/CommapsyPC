@@ -19,6 +19,7 @@ namespace CommapsyPC.Windows
     /// </summary>
     public partial class PlatformWindow : Window
     {
+        public static string adminMail;
         public PlatformWindow()
         {
             InitializeComponent();
