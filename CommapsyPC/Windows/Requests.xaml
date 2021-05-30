@@ -7,6 +7,24 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Label Content="Peticiones de lugares"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Border Background="#303030" Grid.Row="1" CornerRadius="20" Margin="10"/>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Name="requestListPanel">
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <ContentControl Name="requestInfo" Grid.Row="1" Grid.Column="1" />
     </Grid>
 </UserControl>
