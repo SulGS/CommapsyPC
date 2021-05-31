@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CommapsyPC.Class;
+using CommapsyPC.Controls;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,39 +16,36 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
-using CommapsyPC.Class;
-using Newtonsoft.Json.Linq;
-using CommapsyPC.Controls;
 
 namespace CommapsyPC.Windows
 {
     /// <summary>
-    /// Lógica de interacción para Requests.xaml
+    /// Lógica de interacción para Support.xaml
     /// </summary>
-    public partial class Requests : UserControl
+    public partial class Support : UserControl
     {
-        public Requests()
+        public Support()
         {
             InitializeComponent();
             new Thread(new ThreadStart(Search)).Start();
         }
 
-        public void Manage(String ID, String State, String Reply) 
+        public void Answer(String ID, bool SendMail, String Reply)
         {
             List<KeyValuePair<string, string>> parameters = new List<KeyValuePair<string, string>>();
 
             this.Dispatcher.Invoke(() => {
                 parameters.Add(new KeyValuePair<string, string>("ID", ID));
                 parameters.Add(new KeyValuePair<string, string>("Mail", PlatformWindow.adminMail));
-                parameters.Add(new KeyValuePair<string, string>("State", State));
-                parameters.Add(new KeyValuePair<string, string>("Reply", Reply));
+                parameters.Add(new KeyValuePair<string, string>("SendMail", SendMail+""));
+                parameters.Add(new KeyValuePair<string, string>("Body", Reply));
             });
 
-            string result = Request.Request.RequestData("/PlaceRequest/manage", parameters);
+            string result = Request.Request.RequestData("/ContactForm/answer", parameters);
 
 
             this.Dispatcher.Invoke(() => {
-                requestInfo.Content = null;
+                contactInfo.Content = null;
                 Search();
             });
         }
@@ -56,23 +56,23 @@ namespace CommapsyPC.Windows
             List<KeyValuePair<string, string>> parameters = new List<KeyValuePair<string, string>>();
 
             this.Dispatcher.Invoke(() => {
-                requestListPanel.Children.Clear();
+                contactsList.Children.Clear();
                 parameters.Add(new KeyValuePair<string, string>("Page", 0 + ""));
             });
 
-            string result = Request.Request.RequestData("/PlaceRequest/get", parameters);
+            string result = Request.Request.RequestData("/ContactForm/get", parameters);
 
             JArray arrays = Utils.Utils.StringToJsonArray(result);
 
             for (int i = 0; i < arrays.Count; i++)
             {
 
-                PlaceRequest place = PlaceRequest.JsonToPlaceRequest((JObject)arrays[i]);
+                ContactForm cf = ContactForm.JsonToContactForm((JObject)arrays[i]);
 
 
                 this.Dispatcher.Invoke(() => {
-                    PlaceRequestButton prb = new PlaceRequestButton(place,this);
-                    requestListPanel.Children.Add(prb);
+                    ContactFormButton cfb = new ContactFormButton(cf,this);
+                    contactsList.Children.Add(cfb);
                 });
             }
 

@@ -42,7 +42,7 @@ namespace CommapsyPC.Windows
 
         private void soporteMenu_Click(object sender, RoutedEventArgs e)
         {
-
+            container.Content = new Support();
         }
 
         private void moderadoresMenu_Click(object sender, RoutedEventArgs e)

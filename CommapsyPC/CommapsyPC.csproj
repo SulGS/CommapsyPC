@@ -66,10 +66,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Class\ContactForm.cs" />
     <Compile Include="Class\Opinion.cs" />
     <Compile Include="Class\Place.cs" />
     <Compile Include="Class\PlaceRequest.cs" />
     <Compile Include="Class\User.cs" />
+    <Compile Include="Controls\ContactFormButton.xaml.cs">
+      <DependentUpon>ContactFormButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ContactFormFullView.xaml.cs">
+      <DependentUpon>ContactFormFullView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\OpinionControl.xaml.cs">
       <DependentUpon>OpinionControl.xaml</DependentUpon>
     </Compile>
@@ -96,6 +103,17 @@
     <Compile Include="Windows\Requests.xaml.cs">
       <DependentUpon>Requests.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Support.xaml.cs">
+      <DependentUpon>Support.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Controls\ContactFormButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ContactFormFullView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\OpinionControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -137,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Requests.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Support.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
