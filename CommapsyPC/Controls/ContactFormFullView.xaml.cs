@@ -40,7 +40,7 @@ namespace CommapsyPC.Controls
             Delete.IsEnabled = false;
             Accept.IsEnabled = false;
             string ID = cf.ID + "";
-            string Reply = reply.Text;
+            string Reply = reply.Text.Replace("\n", ".,.");
             new Thread(() => sup.Answer(ID, false, Reply)).Start();
         }
 
@@ -49,7 +49,7 @@ namespace CommapsyPC.Controls
             Delete.IsEnabled = false;
             Accept.IsEnabled = false;
             string ID = cf.ID + "";
-            string Reply = reply.Text;
+            string Reply = reply.Text.Replace("\n", ".,.");
             new Thread(() => sup.Answer(ID, true, Reply)).Start();
         }
     }

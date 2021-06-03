@@ -25,6 +25,8 @@
         <Border Background="#303030" Grid.Row="1" Grid.ColumnSpan="2" CornerRadius="20" Margin="10"/>
         <Border Background="#303030" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" CornerRadius="20" Margin="10"/>
 
+        <ContentControl Name="penaliseControl" Grid.ColumnSpan="3" />
+
         <Button Name="Delete" Click="Delete_Click" Content="Rechazar" Grid.Row="2" Grid.Column="3" Margin="10" Background="#E84545"/>
         <Button Name="Accept" Click="Accept_Click" Content="Aceptar" Grid.Row="2" Grid.Column="2" Margin="10" Background="#E84545"/>
         

@@ -92,6 +92,9 @@
     <Compile Include="Controls\PlaceRequestFullView.xaml.cs">
       <DependentUpon>PlaceRequestFullView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\UserPenaliseControl.xaml.cs">
+      <DependentUpon>UserPenaliseControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Request\Request.cs" />
     <Compile Include="Utils\Utils.cs" />
     <Compile Include="Windows\Explorer.xaml.cs">
@@ -131,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\PlaceRequestFullView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\UserPenaliseControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
