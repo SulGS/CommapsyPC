@@ -20,9 +20,12 @@ namespace CommapsyPC.Windows
     public partial class PlatformWindow : Window
     {
         public static string adminMail;
+        public static PlatformWindow pw;
+
         public PlatformWindow()
         {
             InitializeComponent();
+            pw = this;
         }
 
         private void buscarLugaresMenu_Click(object sender, RoutedEventArgs e)
@@ -37,7 +40,7 @@ namespace CommapsyPC.Windows
 
         private void reportesMenu_Click(object sender, RoutedEventArgs e)
         {
-
+            container.Content = new Reports();
         }
 
         private void soporteMenu_Click(object sender, RoutedEventArgs e)

@@ -5,18 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.IO;
+using System.Windows;
+using CommapsyPC.Windows;
 
 namespace CommapsyPC.Request
 {
     class Request
     {
         public static readonly string URL = "http://192.168.1.192:8080";
+        public static string Token = "null";
 
         public static string RequestData(string page, List<KeyValuePair<string,string>> parameters) 
         {
             try
             {
                 var httpWebRequest = (HttpWebRequest)WebRequest.Create(URL + page);
+                httpWebRequest.Headers.Add("Authorization",Token);
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
 
@@ -47,6 +51,16 @@ namespace CommapsyPC.Request
 
 
                 var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+
+                if (httpResponse.StatusCode==HttpStatusCode.Forbidden) 
+                {
+                    PlatformWindow.pw.Dispatcher.Invoke(() =>
+                    {
+                        MessageBox.Show("Token desactualizado. Reinicie la aplicacion");
+                        Environment.Exit(0);
+                    });
+                }
+
                 using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
                 {
                     string stringReturn = streamReader.ReadToEnd();

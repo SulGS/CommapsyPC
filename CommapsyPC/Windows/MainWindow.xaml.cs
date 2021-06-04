@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
 using CommapsyPC.Windows;
+using CommapsyPC.Class;
 
 namespace CommapsyPC
 {
@@ -38,7 +39,15 @@ namespace CommapsyPC
                 parameters.Add((new KeyValuePair<string, string>("Password", Utils.Utils.sha256_hash(passwordInput.Password))));
             });
 
+            string result2 = Request.Request.RequestData("/User/login", parameters);
+
+            User user = User.JsonToUser(Utils.Utils.StringToJsonObject(result2));
+
+            Request.Request.Token = user._Key;
+
             string result = Request.Request.RequestData("/Admin/login", parameters);
+
+            
 
             this.Dispatcher.Invoke(() => {
                 if (result != "")

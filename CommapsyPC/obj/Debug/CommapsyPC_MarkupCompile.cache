@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\App.xaml
-13-339887561
+161441693256
 
-24-1344992597
+282024094507
 16951624268
-Controls\ContactFormButton.xaml;Controls\ContactFormFullView.xaml;Controls\OpinionControl.xaml;Controls\PlaceButton.xaml;Controls\PlaceFullView.xaml;Controls\PlaceRequestButton.xaml;Controls\PlaceRequestFullView.xaml;Controls\UserPenaliseControl.xaml;Windows\Explorer.xaml;Windows\MainWindow.xaml;Windows\PlatformWindow.xaml;Windows\Requests.xaml;Windows\Support.xaml;
+Controls\ContactFormButton.xaml;Controls\ContactFormFullView.xaml;Controls\OpinionControl.xaml;Controls\PlaceButton.xaml;Controls\PlaceFullView.xaml;Controls\PlaceRequestButton.xaml;Controls\PlaceRequestFullView.xaml;Controls\ReportButton.xaml;Controls\ReportFullView.xaml;Controls\UserPenaliseControl.xaml;Windows\Explorer.xaml;Windows\MainWindow.xaml;Windows\PlatformWindow.xaml;Windows\Reports.xaml;Windows\Requests.xaml;Windows\Support.xaml;
 
 False
 

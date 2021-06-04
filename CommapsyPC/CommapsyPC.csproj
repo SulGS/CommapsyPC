@@ -70,6 +70,7 @@
     <Compile Include="Class\Opinion.cs" />
     <Compile Include="Class\Place.cs" />
     <Compile Include="Class\PlaceRequest.cs" />
+    <Compile Include="Class\Report.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Controls\ContactFormButton.xaml.cs">
       <DependentUpon>ContactFormButton.xaml</DependentUpon>
@@ -92,6 +93,12 @@
     <Compile Include="Controls\PlaceRequestFullView.xaml.cs">
       <DependentUpon>PlaceRequestFullView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ReportButton.xaml.cs">
+      <DependentUpon>ReportButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReportFullView.xaml.cs">
+      <DependentUpon>ReportFullView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\UserPenaliseControl.xaml.cs">
       <DependentUpon>UserPenaliseControl.xaml</DependentUpon>
     </Compile>
@@ -102,6 +109,9 @@
     </Compile>
     <Compile Include="Windows\PlatformWindow.xaml.cs">
       <DependentUpon>PlatformWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Reports.xaml.cs">
+      <DependentUpon>Reports.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Requests.xaml.cs">
       <DependentUpon>Requests.xaml</DependentUpon>
@@ -137,6 +147,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\ReportButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ReportFullView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\UserPenaliseControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -158,6 +176,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\PlatformWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Reports.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
