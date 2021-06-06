@@ -66,6 +66,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Class\Admin.cs" />
     <Compile Include="Class\ContactForm.cs" />
     <Compile Include="Class\Opinion.cs" />
     <Compile Include="Class\Place.cs" />
@@ -77,6 +78,9 @@
     </Compile>
     <Compile Include="Controls\ContactFormFullView.xaml.cs">
       <DependentUpon>ContactFormFullView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ModControl.xaml.cs">
+      <DependentUpon>ModControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\OpinionControl.xaml.cs">
       <DependentUpon>OpinionControl.xaml</DependentUpon>
@@ -104,6 +108,9 @@
     </Compile>
     <Compile Include="Request\Request.cs" />
     <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Windows\Admins.xaml.cs">
+      <DependentUpon>Admins.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Explorer.xaml.cs">
       <DependentUpon>Explorer.xaml</DependentUpon>
     </Compile>
@@ -124,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\ContactFormFullView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ModControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,6 +167,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\UserPenaliseControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Admins.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

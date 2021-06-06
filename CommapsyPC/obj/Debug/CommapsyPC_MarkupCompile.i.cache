@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\App.xaml
-161441693256
+18-1271763168
 
-291181735140
+32-1681135380
 16951624268
-Controls\ContactFormButton.xaml;Controls\ContactFormFullView.xaml;Controls\OpinionControl.xaml;Controls\PlaceButton.xaml;Controls\PlaceFullView.xaml;Controls\PlaceRequestButton.xaml;Controls\PlaceRequestFullView.xaml;Controls\ReportButton.xaml;Controls\ReportFullView.xaml;Controls\UserPenaliseControl.xaml;Windows\Explorer.xaml;Windows\MainWindow.xaml;Windows\PlatformWindow.xaml;Windows\Reports.xaml;Windows\Requests.xaml;Windows\Support.xaml;
+Controls\ContactFormButton.xaml;Controls\ContactFormFullView.xaml;Controls\ModControl.xaml;Controls\OpinionControl.xaml;Controls\PlaceButton.xaml;Controls\PlaceFullView.xaml;Controls\PlaceRequestButton.xaml;Controls\PlaceRequestFullView.xaml;Controls\ReportButton.xaml;Controls\ReportFullView.xaml;Controls\UserPenaliseControl.xaml;Windows\Admins.xaml;Windows\Explorer.xaml;Windows\MainWindow.xaml;Windows\PlatformWindow.xaml;Windows\Reports.xaml;Windows\Requests.xaml;Windows\Support.xaml;
 
 True
 

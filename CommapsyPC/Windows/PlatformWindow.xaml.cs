@@ -50,7 +50,7 @@ namespace CommapsyPC.Windows
 
         private void moderadoresMenu_Click(object sender, RoutedEventArgs e)
         {
-
+            container.Content = new Admins();
         }
 
         private void minimizarMenu_Click(object sender, RoutedEventArgs e)

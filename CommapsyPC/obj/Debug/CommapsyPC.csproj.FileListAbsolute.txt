@@ -52,3 +52,7 @@ C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\ReportButton
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Reports.baml
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\ReportFullView.g.cs
 C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\ReportFullView.baml
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Admins.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Windows\Admins.baml
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\ModControl.g.cs
+C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\obj\Debug\Controls\ModControl.baml
