@@ -44,6 +44,7 @@ namespace CommapsyPC.Controls
             oldCategory.Content = p.Category;
             oldDescription.Text = p.Description;
             req = r;
+            penaliseControl.Content = new UserPenaliseControl(user);
         }
 
 
@@ -52,7 +53,7 @@ namespace CommapsyPC.Controls
             Delete.IsEnabled = false;
             Accept.IsEnabled = false;
             string ID = placeRequest.ID + "";
-            string Reply = reply.Text;
+            string Reply = reply.Text.Replace("\n", ".,.");
             new Thread(() => req.Manage(ID , false + "", Reply)).Start();
         }
 
@@ -61,7 +62,7 @@ namespace CommapsyPC.Controls
             Delete.IsEnabled = false;
             Accept.IsEnabled = false;
             string ID = placeRequest.ID + "";
-            string Reply = reply.Text;
+            string Reply = reply.Text.Replace("\n",".,.");
             new Thread(() => req.Manage(ID, true + "", Reply)).Start();
         }
     }

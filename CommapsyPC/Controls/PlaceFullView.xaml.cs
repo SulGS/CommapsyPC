@@ -36,7 +36,7 @@ namespace CommapsyPC.Controls
 
         public void loadImage(Place p) 
         {
-            var fullFilePath = @"http://192.168.1.192/" + p.Photo;
+            var fullFilePath = @"http://commapsy.us.to:8082/" + p.Photo;
 
             BitmapImage bitmap = new BitmapImage();
             bitmap.BeginInit();

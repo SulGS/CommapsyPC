@@ -43,7 +43,6 @@ namespace CommapsyPC.Windows
 
             string result = Request.Request.RequestData("/PlaceRequest/manage", parameters);
 
-            JArray arrays = Utils.Utils.StringToJsonArray(result);
 
             this.Dispatcher.Invoke(() => {
                 requestInfo.Content = null;
