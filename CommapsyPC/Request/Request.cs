@@ -12,7 +12,7 @@ namespace CommapsyPC.Request
 {
     class Request
     {
-        public static readonly string URL = "http://192.168.1.192:8080";
+        public static readonly string URL = "http://commapsy.us.to:8081";
         public static string Token = "null";
 
         public static string RequestData(string page, List<KeyValuePair<string,string>> parameters) 

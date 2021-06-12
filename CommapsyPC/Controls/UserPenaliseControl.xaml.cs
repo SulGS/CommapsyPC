@@ -29,7 +29,7 @@ namespace CommapsyPC.Controls
         {
             InitializeComponent();
             user = u;
-            userName.Content = user.Name;
+            userName.Content = user.Mail;
         }
 
         private void SendPenalise() 

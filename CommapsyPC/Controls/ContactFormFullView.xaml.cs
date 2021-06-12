@@ -25,14 +25,17 @@ namespace CommapsyPC.Controls
     {
         private ContactForm cf;
         private Support sup;
+        private User user;
 
-        public ContactFormFullView(ContactForm cf, Support s)
+        public ContactFormFullView(ContactForm cf, Support s,User user)
         {
             InitializeComponent();
             this.cf = cf;
+            this.user = user;
             sup = s;
             subject.Content = cf.Subject + " (" + cf.SendDate.ToString("dd-MM-yyyy") + ")";
             body.Text = cf.Body;
+            penaliseControl.Content = new UserPenaliseControl(user);
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)

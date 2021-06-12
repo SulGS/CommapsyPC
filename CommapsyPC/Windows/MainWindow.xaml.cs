@@ -41,28 +41,41 @@ namespace CommapsyPC
 
             string result2 = Request.Request.RequestData("/User/login", parameters);
 
-            User user = User.JsonToUser(Utils.Utils.StringToJsonObject(result2));
-
-            Request.Request.Token = user._Key;
-
-            string result = Request.Request.RequestData("/Admin/login", parameters);
-
-            
-
-            this.Dispatcher.Invoke(() => {
-                if (result != "")
-                {
-                    MessageBox.Show("ACCESO PERMITIDO");
-                    new PlatformWindow().Show();
-                    this.Close();
-                }
-                else
+            if (result2 == "")
+            {
+                this.Dispatcher.Invoke(() =>
                 {
                     MessageBox.Show("ACCESO DENEGADO");
-                }
+                    loginButton.IsEnabled = true;
+                });
+            }
+            else
+            {
 
-                loginButton.IsEnabled = true;
-            });
+                User user = User.JsonToUser(Utils.Utils.StringToJsonObject(result2));
+
+                Request.Request.Token = user._Key;
+
+                string result = Request.Request.RequestData("/Admin/login", parameters);
+
+
+
+                this.Dispatcher.Invoke(() =>
+                {
+                    if (result != "")
+                    {
+                        MessageBox.Show("ACCESO PERMITIDO");
+                        new PlatformWindow().Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("ACCESO DENEGADO");
+                    }
+
+                    loginButton.IsEnabled = true;
+                });
+            }
 
         }
 

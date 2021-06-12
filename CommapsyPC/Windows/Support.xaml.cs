@@ -69,9 +69,18 @@ namespace CommapsyPC.Windows
 
                 ContactForm cf = ContactForm.JsonToContactForm((JObject)arrays[i]);
 
+                parameters = new List<KeyValuePair<string, string>>();
 
                 this.Dispatcher.Invoke(() => {
-                    ContactFormButton cfb = new ContactFormButton(cf,this);
+                    parameters.Add(new KeyValuePair<string, string>("Mail", cf.User_Mail));
+                });
+
+                result = Request.Request.RequestData("/User/getUser", parameters);
+
+                User user = User.JsonToUser(Utils.Utils.StringToJsonObject(result));
+
+                this.Dispatcher.Invoke(() => {
+                    ContactFormButton cfb = new ContactFormButton(cf,this,user);
                     contactsList.Children.Add(cfb);
                 });
             }

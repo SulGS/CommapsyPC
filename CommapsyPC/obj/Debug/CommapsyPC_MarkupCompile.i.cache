@@ -16,5 +16,5 @@ C:\Users\Saul\source\repos\CommapsyPC\CommapsyPC\App.xaml
 16951624268
 Controls\ContactFormButton.xaml;Controls\ContactFormFullView.xaml;Controls\ModControl.xaml;Controls\OpinionControl.xaml;Controls\PlaceButton.xaml;Controls\PlaceFullView.xaml;Controls\PlaceRequestButton.xaml;Controls\PlaceRequestFullView.xaml;Controls\ReportButton.xaml;Controls\ReportFullView.xaml;Controls\UserPenaliseControl.xaml;Windows\Admins.xaml;Windows\Explorer.xaml;Windows\MainWindow.xaml;Windows\PlatformWindow.xaml;Windows\Reports.xaml;Windows\Requests.xaml;Windows\Support.xaml;
 
-True
+False
 
